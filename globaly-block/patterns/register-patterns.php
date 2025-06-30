@@ -18,6 +18,9 @@ if ( function_exists( 'register_block_pattern' ) ) {
 		'services-section',
 		'cta-section',
 		'latest-posts-section',
+		'about-us-section',
+		'testimonials-section',
+		'featured-content-section',
 	);
 
 	foreach ( $block_patterns as $block_pattern ) {
