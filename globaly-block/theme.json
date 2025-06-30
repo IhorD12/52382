@@ -836,5 +836,16 @@
       "area": "footer"
     }
   ],
-  "customTemplates": []
+  "customTemplates": [
+    {
+      "name": "page-full-width",
+      "title": "Page, Full Width",
+      "postTypes": ["page"]
+    },
+    {
+      "name": "page-landing",
+      "title": "Landing Page (No Header/Footer)",
+      "postTypes": ["page"]
+    }
+  ]
 }
