@@ -257,6 +257,40 @@
     }
   },
   "styles": {
+    "elements": {
+      ".skip-link:focus": {
+        "color": {
+          "background": "var(--wp--preset--color--light-gray-1)",
+          "text": "var(--wp--preset--color--primary)"
+        },
+        "typography": {
+          "fontSize": "0.875rem",
+          "fontWeight": "bold",
+          "textDecoration": "none"
+        },
+        "border": {
+          "radius": "3px"
+        },
+        "outline": {
+            "width": "2px",
+            "style": "solid",
+            "color": "var(--wp--preset--color--secondary)",
+            "offset": "2px"
+        },
+        "dimensions": {
+            "minHeight": "auto"
+        },
+        "position": {
+            "position": "absolute",
+            "top": "5px",
+            "left": "5px"
+        },
+        "spacing": {
+            "padding": "1em"
+        },
+        "zIndex": "100000"
+        }
+    },
     "blocks": {
       "core/button": {
         "border": {
@@ -539,6 +573,21 @@
           "border":{
             "color": "var(--wp--preset--color--secondary)"
           }
+        },
+        ":focus": {
+          "color": {
+            "background": "var(--wp--preset--color--secondary)",
+            "text": "var(--wp--preset--color--white)"
+          },
+          "border":{
+            "color": "var(--wp--preset--color--secondary)"
+          },
+          "outline": {
+            "width": "2px",
+            "style": "solid",
+            "color": "var(--wp--preset--color--primary)",
+            "offset": "2px"
+          }
         }
       },
       "table": {
@@ -632,6 +681,17 @@
         ":hover": {
           "color": {
             "text": "var(--wp--preset--color--secondary)"
+          }
+        },
+        ":focus": {
+          "color": {
+            "text": "var(--wp--preset--color--secondary)"
+          },
+          "outline": {
+            "width": "2px",
+            "style": "dotted",
+            "color": "var(--wp--preset--color--secondary)",
+            "offset": "2px"
           }
         }
       },
