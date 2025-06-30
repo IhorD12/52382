@@ -1,0 +1,302 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "800px",
+      "wideSize": "1200px",
+      "default": {
+        "contentSize": "800px",
+        "wideSize": "1200px"
+      }
+    },
+    "color": {
+      "custom": true,
+      "customDuotone": true,
+      "customGradient": true,
+      "link": true,
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#15c1c6",
+          "name": "Primary Accent (Teal)"
+        },
+        {
+          "slug": "secondary",
+          "color": "#333333",
+          "name": "Secondary (Dark Gray)"
+        },
+        {
+          "slug": "text-main",
+          "color": "#777777",
+          "name": "Text (Medium Gray)"
+        },
+        {
+          "slug": "headings",
+          "color": "#31353d",
+          "name": "Headings (Dark Charcoal)"
+        },
+        {
+          "slug": "white",
+          "color": "#ffffff",
+          "name": "White"
+        },
+        {
+          "slug": "light-gray-1",
+          "color": "#f6f6f6",
+          "name": "Light Gray 1 (Input BG)"
+        },
+        {
+          "slug": "light-gray-2",
+          "color": "#ebebeb",
+          "name": "Light Gray 2 (HR BG)"
+        },
+        {
+          "slug": "border-gray",
+          "color": "#e0e0e8",
+          "name": "Border Gray"
+        }
+      ]
+    },
+    "typography": {
+      "customFontSize": true,
+      "lineHeight": true,
+      "fontFamilies": [
+        {
+          "fontFamily": "\"Merriweather Sans\", sans-serif",
+          "slug": "body",
+          "name": "Merriweather Sans",
+          "fontFace": [
+            {
+              "fontFamily": "Merriweather Sans",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/merriweather-sans/MerriweatherSans-Regular.ttf"]
+            },
+            {
+              "fontFamily": "Merriweather Sans",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/merriweather-sans/MerriweatherSans-Bold.ttf"]
+            },
+            {
+              "fontFamily": "Merriweather Sans",
+              "fontWeight": "400",
+              "fontStyle": "italic",
+              "src": ["file:./assets/fonts/merriweather-sans/MerriweatherSans-Italic.ttf"]
+            },
+            {
+              "fontFamily": "Merriweather Sans",
+              "fontWeight": "700",
+              "fontStyle": "italic",
+              "src": ["file:./assets/fonts/merriweather-sans/MerriweatherSans-BoldItalic.ttf"]
+            }
+          ]
+        },
+        {
+          "fontFamily": "Merriweather, serif",
+          "slug": "headings",
+          "name": "Merriweather",
+           "fontFace": [
+            {
+              "fontFamily": "Merriweather",
+              "fontWeight": "300",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/merriweather/Merriweather-Light.ttf"]
+            },
+            {
+              "fontFamily": "Merriweather",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/merriweather/Merriweather-Regular.ttf"]
+            },
+            {
+              "fontFamily": "Merriweather",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/merriweather/Merriweather-Bold.ttf"]
+            },
+            {
+                "fontFamily": "Merriweather",
+                "fontWeight": "300",
+                "fontStyle": "italic",
+                "src": ["file:./assets/fonts/merriweather/Merriweather-LightItalic.ttf"]
+            },
+            {
+              "fontFamily": "Merriweather",
+              "fontWeight": "400",
+              "fontStyle": "italic",
+              "src": ["file:./assets/fonts/merriweather/Merriweather-Italic.ttf"]
+            },
+            {
+              "fontFamily": "Merriweather",
+              "fontWeight": "700",
+              "fontStyle": "italic",
+              "src": ["file:./assets/fonts/merriweather/Merriweather-BoldItalic.ttf"]
+            }
+          ]
+        },
+        {
+          "fontFamily": "Lato, sans-serif",
+          "slug": "ui",
+          "name": "Lato",
+          "fontFace": [
+            {
+              "fontFamily": "Lato",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/lato/Lato-Regular.ttf"]
+            },
+            {
+              "fontFamily": "Lato",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/lato/Lato-Bold.ttf"]
+            },
+            {
+              "fontFamily": "Lato",
+              "fontWeight": "900",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/lato/Lato-Black.ttf"]
+            },
+            {
+                "fontFamily": "Lato",
+                "fontWeight": "400",
+                "fontStyle": "italic",
+                "src": ["file:./assets/fonts/lato/Lato-Italic.ttf"]
+            }
+          ]
+        }
+      ]
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true,
+      "blockGap": true,
+      "units": [ "px", "em", "rem", "%", "vw", "vh" ]
+    },
+    "blocks": {
+      "core/button": {
+        "color": {
+          "palette": [
+            { "name": "Primary", "slug": "primary", "color": "#15c1c6" },
+            { "name": "Secondary", "slug": "secondary", "color": "#333333" }
+          ]
+        },
+        "typography": {
+          "fontSizes": [
+            { "name": "Small", "slug": "small", "size": "14px" },
+            { "name": "Normal", "slug": "normal", "size": "16px" },
+            { "name": "Large", "slug": "large", "size": "18px" }
+          ]
+        }
+      }
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--body)",
+      "fontSize": "16px",
+      "lineHeight": "1.4375"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--primary)"
+        },
+        ":hover": {
+          "color": {
+            "text": "var(--wp--preset--color--secondary)"
+          }
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--headings)",
+          "fontWeight": "300",
+          "fontSize": "66px",
+          "lineHeight": "1.31818"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--headings)"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--headings)",
+          "fontWeight": "700",
+          "fontSize": "48px",
+          "lineHeight": "1.36957"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--headings)"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--headings)",
+          "fontWeight": "300",
+          "fontSize": "36px",
+          "lineHeight": "1.33333"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--headings)"
+        }
+      },
+      "h4": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--headings)",
+          "fontWeight": "500",
+          "fontSize": "29px",
+          "lineHeight": "1.38462"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--headings)"
+        }
+      },
+      "h5": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--headings)",
+          "fontWeight": "700",
+          "fontSize": "24px",
+          "lineHeight": "1.5"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--primary)"
+        }
+      },
+      "h6": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--headings)",
+          "fontWeight": "700",
+          "fontSize": "18px",
+          "lineHeight": "1.27778"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--headings)"
+        }
+      }
+    },
+    "color": {
+      "text": "var(--wp--preset--color--text-main)",
+      "background": "var(--wp--preset--color--white)"
+    },
+    "spacing": {
+      "blockGap": "1.5rem"
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
+  ],
+  "customTemplates": []
+}
