@@ -1,0 +1,9 @@
+/**
+ * Editor-specific Styles
+ *
+ * These styles are loaded only in the WordPress block editor (Gutenberg)
+ * and can be used to fine-tune the editor's appearance or block previews
+ * if theme.json capabilities are not sufficient.
+ *
+ * Most block styling should be handled by theme.json.
+ */
