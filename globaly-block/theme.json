@@ -271,6 +271,17 @@
           }
         }
       },
+      "core/term-description": {
+        "typography": {
+            "fontSize": "1rem",
+            "fontStyle": "italic"
+        },
+        "spacing": {
+            "margin": {
+                "bottom": "var(--wp--preset--spacing--40)"
+            }
+        }
+      },
       "core/table": {
         "border": {
           "color": "var(--wp--preset--color--light-gray-2)",
