@@ -13,16 +13,20 @@ if ( function_exists( 'register_block_pattern_category' ) ) {
 }
 
 if ( function_exists( 'register_block_pattern' ) ) {
-	// Example Pattern Registration (to be replaced with actual patterns)
-	/*
-	register_block_pattern(
-		'globaly-block/example-pattern',
-		array(
-			'title'       => __( 'Example Pattern', 'globaly-block' ),
-			'description' => _x( 'A simple example pattern.', 'Block pattern description', 'globaly-block' ),
-			'categories'  => array( 'globaly-block' ),
-			'content'     => '<!-- wp:heading {"level":2} --><h2>' . esc_html__( 'Example Pattern Title', 'globaly-block' ) . '</h2><!-- /wp:heading --><!-- wp:paragraph --><p>' . esc_html__( 'This is a sample pattern content. Replace this with your actual block markup.', 'globaly-block' ) . '</p><!-- /wp:paragraph -->',
-		)
+	$block_patterns = array(
+		'hero-section',
+		'services-section',
+		'cta-section',
+		'latest-posts-section',
 	);
-	*/
+
+	foreach ( $block_patterns as $block_pattern ) {
+		$pattern_file = get_theme_file_path( '/patterns/' . $block_pattern . '.php' );
+		if ( file_exists( $pattern_file ) ) {
+			register_block_pattern(
+				'globaly-block/' . $block_pattern,
+				require $pattern_file
+			);
+		}
+	}
 }

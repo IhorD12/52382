@@ -156,7 +156,7 @@ add_action( 'widgets_init', 'globaly_block_widgets_init' );
 /**
  * Block Patterns.
  */
-// require get_template_directory() . '/patterns/register-patterns.php'; // Uncomment and populate when you have patterns
+require get_template_directory() . '/patterns/register-patterns.php';
 
 /**
  * Block Styles.
